@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    font-family: Saira Condensed;
+    background: #EEEBEB;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header{
+    width: 100%;
+    height: 33.3%;
+    position: relative;
+    
+
+}
+
+
+.pages{
+    position: absolute;
+    top: 0;
+    right: 2%;
+    color: white; /* Metin rengi */
+    font-size: 24px; /* Metin boyutu */
+    font-weight: bold; /* Metin kalınlığı */
+    text-align: center; /* Metin hizalaması */
+    display: flex;
+
+    .a{
+        margin: 20px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.mainTitle{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: white; /* Metin rengi */
+    font-weight: bold; /* Metin kalınlığı */
+
+    
+    .title{
+        color: #FFF;  
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+       
+      
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 607px;
+    max-height: 199px;
+    background-color: #FFF;
+    border-radius: 20px;
+    color: var(--red, #F00);
+    font-family: Saira Condensed;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 30px;
+
+    }
+}
+.body{
+    width: 100%;
+    height: 33.3%;
+    background-color: grey;
+}
+
+.footer{
+    width: 100%;
+    height: 33.3%;
+    background-color: black;
+}
