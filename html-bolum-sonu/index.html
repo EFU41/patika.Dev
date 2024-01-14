@@ -1,65 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enes Furkan</title>
+    <title>Anasayfa | Kodluyoruz</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header,
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: auto;
+    }
+  </style>
   <body>
-    <div style="display: flex; justify-content: space-between" class="header">
-      <h1><a href="index.html" style="text-decoration: none">Ana Sayfa</a></h1>
-      <h1>
-        <a href="about-us.html" style="text-decoration: none">Hakkımda</a>
-      </h1>
-      <h1><a href="contact.html" style="text-decoration: none">iletişim</a></h1>
-    </div>
-    <div class="body">
-      <div id="1">
-        <img
-          style="height: 300px"
-          src="https://img-s1.onedio.com/id-634f0136433696ee79860e0b/rev-0/w-900/h-560/f-jpg/s-739a01104dba533285677c9fd65c65df381a95af.jpg"
-          alt=""
-        />
+    <!--Navbar - Start-->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Anasayfa</a>
+          </li>
+          <li>
+            <a href="info.html">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Navbar - End-->
+
+    <!--Content - Start-->
+    <section>
+      <!--Article - Start-->
+      <article>
+        <img src="https://picsum.photos/id/237/600/300" alt="yazı-1-resim" />
+        <h2>Birinci Yazı</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error sed
-          iure, dolor ex incidunt atque fuga quisquam laudantium natus maxime,
-          obcaecati cupiditate. Ipsam hic distinctio laborum consequuntur quam
-          esse.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis, quis!
         </p>
-      </div>
-      <div id="2">
-        <img
-          style="height: 300px"
-          src="https://img-s1.onedio.com/id-634f0136433696ee79860e0b/rev-0/w-900/h-560/f-jpg/s-739a01104dba533285677c9fd65c65df381a95af.jpg"
-          alt=""
-        />
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ol>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Dolore laboriosam cumque dicta blanditiis?</li>
+          <li>Molestias veniam et tempora excepturi.</li>
+          <li>Voluptate, aperiam. Autem, delectus commodi.</li>
+        </ol>
+        <hr />
+      </article>
+      <article>
+        <img src="https://picsum.photos/id/27/600/300" alt="yazı-2-resim" />
+        <h2>İkinci Yazı</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error sed
-          iure, dolor ex incidunt atque fuga quisquam laudantium natus maxime,
-          obcaecati cupiditate. Ipsam hic distinctio laborum consequuntur quam
-          esse.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+          ipsa!
         </p>
-      </div>
-      <div id="3">
-        <img
-          style="height: 300px"
-          src="https://img-s1.onedio.com/id-634f0136433696ee79860e0b/rev-0/w-900/h-560/f-jpg/s-739a01104dba533285677c9fd65c65df381a95af.jpg"
-          alt=""
-        />
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Tenetur, incidunt quae. Dolore, quo!</li>
+          <li>Corrupti, dolorem totam. Perferendis, culpa!</li>
+          <li>Dolorem asperiores possimus cumque ducimus.</li>
+        </ul>
+        <hr />
+      </article>
+      <article>
+        <img src="https://picsum.photos/id/217/600/300" alt="yazı-3-resim" />
+        <h2>Üçüncü Yazı</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error sed
-          iure, dolor ex incidunt atque fuga quisquam laudantium natus maxime,
-          obcaecati cupiditate. Ipsam hic distinctio laborum consequuntur quam
-          esse.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nemo?
         </p>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between" class="footer">
-      <h1><a href="index.html" style="text-decoration: none">Ana Sayfa</a></h1>
-      <h1>
-        <a href="about-us.html" style="text-decoration: none">Hakkımda</a>
-      </h1>
-      <h1><a href="contact.html" style="text-decoration: none">iletişim</a></h1>
-    </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <hr />
+      </article>
+      <!--Article - End-->
+    </section>
+    <!--Content - End-->
+
+    <!--Footer - Start-->
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Anasayfa</a>
+          </li>
+          <li>
+            <a href="info.html">Hakkımızda</a>
+          </li>
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!--Footer - End-->
   </body>
 </html>

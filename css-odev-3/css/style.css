@@ -1,24 +1,43 @@
-body{
-  margin: 0px;
-}
-
 .header {
   list-style-type: none;
   margin: 10px;
   overflow: hidden;
   font-family: arial,sans-serif;
-  font-size: 13px;
-  padding: 0;
+  font-size: 16px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding: 0;
+  
+  button {
+    display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #1E90FF; /* Dodger Blue */
+            color: #fff; /* White */
+            border: 2px solid #1E90FF; /* Dodger Blue */
+            border-radius: 5px; /* Yuvarlatılmış kenarlar */
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    
+  }
+  button:hover{
+    background-color: #d1d4d4; /* White */
+            color: #1E90FF; /* Dodger Blue */
+            border-color: #d1d4d4; /* White */
+
+  }
 }
 
-
-
-.headerdiv {
+.left-header{
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-header{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -29,65 +48,55 @@ body{
   text-align: center;
   padding: 5px 5px;
   text-decoration: none;
+  margin: 10px;
 }
 
 .headerli a:hover {
   text-decoration: underline;
 }
 
-.enes {
+.container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.container {
-  text-align: center;
-  display: flex;
-  justify-content:center ;
-  align-items: center;
-
+  flex-direction: column;
+  height: 500px;
 }
 
 .search-area {
-
   background: #fff;
   display: flex;
-  border: 1px solid #dfe1e5;
-  border-radius: 20px;
+  border: 2px solid #dfe1e5;
+  border-radius: 50px;
+  box-shadow: none;
   height: 44px;
-  margin: 0 auto;
-  width: 582px;
+  margin: 20px auto; /* Daha iyi bir konumlandırma */
+  max-width: 582px; /* Maksimum genişlik ekledim */
+  width: 100%;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5px 18px 0 16px;
+  padding-left: 14px;
 }
 
 .search-img {
   display: flex;
   align-items: center;
-  padding: 13px;
-  margin-top: -5px;
+  padding-right: 13px;
 }
 
 .search-img span {
   color: #9aa0a6;
   height: 20px;
   width: 20px;
-  margin-top: 0px;
+  margin-top: 0;
   display: inline-block;
   fill: currentColor;
   line-height: 24px;
@@ -101,90 +110,75 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .input-area {
-  color: transparent;
-  flex: 100%;
-  white-space: pre;
-  font: 16px arial, sans-serif;
-  line-height: 34px;
-  height: 34px !important;
-  display: block;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2; /* Arama alanına arkaplan ekledim */
 }
 
 .input {
-  width: 100%;
-  height: 100%;
-  border: 0px solid;
-  margin: 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.87);
-  word-wrap: break-word;
+  border: none;
   outline: none;
-  display: flex;
-  flex: 100%;
-  margin-top: -68px;
-  font: 16px arial, sans-serif;
-  line-height: 34px;
-  height: 34px !important;
-  text-rendering: auto;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  text-align: start;
-  appearance: textfield;
-  cursor: text;
+  padding: 12px; /* Daha iyi boşluklandırma */
+  width: 100%;
+  box-sizing: border-box; /* Kutu modelini düzeltme */
 }
 
-.googlesearch {
+.buttons {
+  margin-top: 20px; /* Daha iyi konumlandırma */
+}
+
+.googlesearch, .feelinglucky {
   margin: 11px 4px;
-  padding: 0 16px;
+  padding: 8px 16px;
   line-height: 27px;
   min-width: 54px;
   text-align: center;
   cursor: pointer;
   user-select: none;
+  background-color: #4285f4; /* Google Blue */
+  color: #fff;
+  border: 1px solid #4285f4; /* Google Blue */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.feelinglucky {
-  padding: 0 16px;
-  line-height: 27px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
+.googlesearch:hover, .feelinglucky:hover {
+  background-color: #fff; /* White */
+  color: #4285f4; /* Google Blue */
+  border-color: #4285f4; /* Google Blue */
 }
-
 .footer {
-  list-style-type: none;
+  list-style-type: none; /* Liste işaretlerini kaldır */
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  border: 1px solid #dfe1e5;
-  border-top: 1px solid #dadce0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  line-height: 10px;
-  background-color: #f1f1f1;
+  display: flex;
+  align-items: center; /* Dikey hizalama */
 }
 
 .footerli {
-  float: left;
+  margin-left: 10px;
 }
 
 .footerli a {
-  display: block;
   color: #70757a;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-family: arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
-  margin-left: 14px;
-  margin-right: -20px;
+  padding: 14px 16px;
+  display: block;
 }
 
 .footerli a:hover {
   text-decoration: underline;
+}
+
+.alt{
+  background-color: #fff; /* Arka plan rengi */
+  border: 1px solid #dfe1e5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Sağa hizala */
 }
