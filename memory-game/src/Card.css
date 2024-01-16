@@ -1,0 +1,24 @@
+.card {
+  width: 90px;
+  height: 90px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2px;
+}
+
+.card:hover {
+  background-color: #b0c4de; /* Farklı bir renk */
+}
+
+.revealed {
+  background-color: #87CEEB; /* Tıklanıldığında görünen rengi belirleyin */
+  color: #fff; /* Tıklanıldığında metin rengini belirleyin */
+  cursor: default; /* Tıklanıldığında tıklanabilirliği kapatın */
+  pointer-events: none; /* Tıklanıldığında tekrar tıklanmasını engelleyin */
+}
