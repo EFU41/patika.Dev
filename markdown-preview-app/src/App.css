@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #dbbe16; /* Arka plan rengi */
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.editor,
+.preview {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
+  
+}
+
+.editor {
+  border-right: 1px solid #ddd;
+  textarea {
+    width: 100%;
+    height: calc(100vh - 40px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #dbbe16; /* Arka plan rengi */
+  }
+}
+
+.example-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.preview {
+  overflow-y: auto;
+  background-color: #dbbe16; /* Arka plan rengi */
+}
