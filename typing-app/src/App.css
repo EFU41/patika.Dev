@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.game-container {
+  margin-top: 20px;
+}
+
+.word-container {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.correct {
+  color: green;
+}
+
+.remaining {
+  color: black;
+}
+
+input {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.score-container {
+  margin-top: 20px;
+}
+
+.game-over-container {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
