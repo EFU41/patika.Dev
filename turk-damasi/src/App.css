@@ -1,0 +1,28 @@
+/* src/components/Board.css */
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+  display: flex;
+  background-color: #eee; /* row başlıklarının arkaplan rengi */
+}
+
+/* src/components/Square.css */
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Square bileşeni içindeki tüm sıralardaki taşlara arkaplan rengi uygula */
+.square:nth-child(odd) {
+  background-color: #eee;
+}
